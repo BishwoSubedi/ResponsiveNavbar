@@ -1,118 +1,102 @@
-.body{
-    margin:0;
-    padding:0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.left-con{
-    color: white;
-    position: relative;
-    font-size: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    float: left;
-    left: 20px;
+.left-con {
+  color: white;
+  position: relative;
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  float: left;
+  left: 20px;
 }
-.topnav{
-overflow: hidden;
-background-color: rgb(73, 73, 80);
-text-align: right;
+.topnav {
+  overflow: hidden;
+  background-color: rgb(73, 73, 80);
+  text-align: right;
 }
 
-.topnav a{
-    color: white;
-    text-decoration: none;
-    display: inline block;
-    padding: 12px;
-   position: relative;
-    font-size: 15px;
-    font-weight: bold;
+.topnav a {
+  color: white;
+  text-decoration: none;
+  display: inline block;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
 }
-.topnav a:hover{
-    background-color: white;
-    border-radius:20px ;
-    color: black;
-    border: 2px solid white;
+.topnav a:hover {
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+  border: 2px solid white;
 }
-.right-con{
-    margin-top: 25px;
-    margin-right:30px;
+.right-con {
+  margin-top: 25px;
+  margin-right: 30px;
 }
-.topnav .icon{
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 650px) {
+  .topnav a {
     display: none;
-}
-@media screen and (max-width:650px) {
-    .topnav a{
-       display: none;
-    }
-    .topnav a.icon{
-        float: right;
-        display: block;
-    }
-    .topnav.responsive{
-        padding: 50px;
-    }
-    .topnav.responsive.icon{
+  }
+  .topnav a.icon {
+    float: inline-end;
+    display: block;
+  }
+  .topnav.responsive {
+    padding: 50px;
+  }
+  .topnav.responsive.icon {
     position: absolute;
     text-align: center;
+    display: flex;
     justify-content: center;
     right: 0px;
-    top:0px
-    }
-    .topnav.responsive a{
-        display: block;
-        text-align: center;
-
-    }
-    .topnav.responsive a:nth-child(1){
-        left: 40px; 
-        
-    }
-    .topnav.responsive a:nth-child(2){
-        left: 40px;
-    }
+    top: 0px;
+  }
+  .topnav.responsive a {
+    display: flex;
+    justify-content: center;
+    
+  }
     .topnav.responsive a:nth-child(3){
-        left: 60px;
+        margin-left: 70px;
     }
     .topnav.responsive a:nth-child(4){
-        left: 60px;
+        margin-left: 70px;
     }
     .topnav.responsive a:nth-child(5){
-        left: 60px;
-    }
-    .left-con.res{
-        /* margin-top: -34px;
-        margin-left: -32px; */
-        margin: -3rem -2rem auto;
+        margin-left: 70px;
     }
 }
-@media screen and (max-width:230px){
-    .topnav.responsive a:nth-child(1){
-        left: 10px; 
-        
+
+@media screen and (max-width: 310px) {
+    #logo{
+        position: fixed;
+        float: left;
     }
-    .topnav.responsive a:nth-child(2){
-        left: 10px;
+    .topnav  .right-con {
+        margin-top: 3rem;
     }
-    .topnav.responsive a:nth-child(3){
-        left: 10px;
+    .topnav.responsive a {
+        position:relative;
+      }
+ 
+      .topnav.responsive a:nth-child(3){
+        margin-left: 0.5rem;
     }
     .topnav.responsive a:nth-child(4){
-        left: 10px;
+        margin-left: 0.5rem;
     }
     .topnav.responsive a:nth-child(5){
-        left: 10px;
+        margin-left: 0.5rem;
     }
-    .left-con.res{
-        /* margin-top: -34px;
-        margin-left: -32px; */
-        margin: -4rem -3rem auto;
-    }
-    .topnav.responsive.icon{
-        position: absolute;
-        text-align: center;
-        justify-content: center;
-        right: 10px;
-        top:0px
-        }
+
 }

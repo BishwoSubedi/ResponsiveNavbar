@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <div class="topnav" id="nav">
-       <div class="left-con" id="logo">
-        <p>Logo</p>
-      </div>
-      <div class="right-con">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">MySkills</a>
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>
-    <a href="#" class="icon" onclick="myfun()">
-      <i class="fa fa-bars"></i>
-    </a>
+  <div class="topnav" id="nav">
+    <div class="left-con" id="logo">
+      <p>Logo</p>
     </div>
+    <div class="right-con">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">MySkills</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+      <a href="#" class="icon" onclick="myfun()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    <script>
-      function myfun() {
-        var x =document.getElementById("nav")
-        if(x.className=="topnav"){
-         x.className+= " responsive"
-        }
-        else{
-          x.className="topnav"
-        }
-        var x =document.getElementById("logo")
-        if(x.className=="left-con"){
-         x.className+= " res"
-        }
-        else{
-          x.className="left-con"
-        }
+  </div>
+  <script>
+    function myfun() {
+      var x = document.getElementById("nav")
+      if (x.className == "topnav") {
+        x.className += " responsive"
       }
-    </script>
+      else {
+        x.className = "topnav"
+      }
+      var x = document.getElementById("logo")
+      if (x.className == "left-con") {
+        x.className += " res"
+      }
+      else {
+        x.className = "left-con"
+      }
+    }
+  </script>
 </body>
+
 </html>
